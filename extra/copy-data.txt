@@ -1,0 +1,9 @@
+To Azure Blob Storage
+
+AzCopy /Source:<backup folder> /Dest:https://devops9867acct.blob.core.windows.net/data /DestKey:<storage account key> /S /V:C:\temp\copy-data.log /Pattern:"<file>"
+
+
+From Azure Blob Storage
+
+AzCopy /Source:https://devops9867acct.blob.core.windows.net/data /Dest:Z:\TFS /SourceKey:<storage account key> /S /V:C:\temp\copy-data.log /Pattern:"<file>"
+

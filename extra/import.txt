@@ -1,0 +1,11 @@
+Validation
+    Validate collection without identity mapping validation
+Migrator.exe validate /collection:http://localhost:8080/tfs/<collection>
+    Validate collection with identity mapping validation
+Migrator.exe validate /collection:http://localhost:8080/tfs/<collection> /tenantDomainName:<tenant>
+
+Prepare Import
+Migrator.exe prepare /collection:http://localhost:8080/tfs/<collection>/ /tenantDomainName:<tenant> /Region:EAU
+
+Import
+Migrator.exe import /importFile:"<import-spec-file>"

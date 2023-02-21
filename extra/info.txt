@@ -1,0 +1,9 @@
+
+In order to perform TFS to Azure DevOps migration, the service account <service-account> requires Contributor access to the Azure subscription.
+
+Azure Instance: <Azure Subscription name>
+Resource Group: devops9867
+Sql VM name: sqlvm
+Local admin: sqlvm\LocalAdmin
+Storage account: devops9867acct
+
