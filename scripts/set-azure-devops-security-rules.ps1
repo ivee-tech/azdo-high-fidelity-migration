@@ -13,11 +13,27 @@ $items = @(
     },
     @{
         serviceName = 'Regional Identity Service - Australia East 1'; 
-        IPs = '13.70.121.123';
+        IPs = '13.75.145.145';
     },
     @{
         serviceName = 'Regional Identity Service - Australia East 2'; 
-        IPs = '52.187.228.246';
+        IPs = '40.82.217.103';
+    },
+    @{
+        serviceName = 'Regional Identity Service - Australia East 3'; 
+        IPs = '20.188.213.113';
+    },
+    @{
+        serviceName = 'Regional Identity Service - Australia East 4'; 
+        IPs = '104.210.88.194';
+    },
+    @{
+        serviceName = 'Regional Identity Service - Australia East 5'; 
+        IPs = '40.81.62.114';
+    },
+    @{
+        serviceName = 'Regional Identity Service - Australia East 6'; 
+        IPs = '20.37.194.0/24';
     },
     @{
         serviceName = 'Data Migration tool - Australia East 1'; 
@@ -90,8 +106,16 @@ $items = @(
     @{
         serviceName = 'Azure Artifacts Blob - Australia East 3'; 
         IPs = '40.82.221.14';
-    }    
-)
+    },
+    @{
+        serviceName = 'Test Plans - Australia East 1'; 
+        IPs = '20.40.177.101';
+    },
+    @{
+        serviceName = 'Analytics service - Australia East 1'; 
+        IPs = '20.40.179.159';
+    }
+    )
 
 $items | % { $index = 0 } {
     $serviceName = $_.serviceName

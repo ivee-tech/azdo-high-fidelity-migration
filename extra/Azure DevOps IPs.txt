@@ -1,7 +1,11 @@
 Azure DevOps Services Identity Service 1	168.62.105.45
 Azure DevOps Services Identity Service 2	40.81.42.115
-Regional Identity Service - Australia East 1	13.70.121.123
-Regional Identity Service - Australia East 2	52.187.228.246
+Regional Identity Service - Australia East 1	13.75.145.145
+Regional Identity Service - Australia East 2	40.82.217.103
+Regional Identity Service - Australia East 3	20.188.213.113
+Regional Identity Service - Australia East 4	104.210.88.194
+Regional Identity Service - Australia East 5	40.81.62.114
+Regional Identity Service - Australia East 6	20.37.194.0/24
 Data Migration tool - Australia East 1	13.75.134.204
 Data Migration tool - Australia East 2	40.82.219.41
 Data Migration tool - Australia East 3	20.40.124.19
@@ -20,3 +24,5 @@ Azure Artifacts Feed - Australia East 2	20.40.176.80
 Azure Artifacts Blob - Australia East 1	40.127.86.30
 Azure Artifacts Blob - Australia East 2	20.188.213.113
 Azure Artifacts Blob - Australia East 3	40.82.221.14
+Test Plans - Australia East 1	20.40.177.101
+Analytics service - Australia East 1	20.40.179.159
