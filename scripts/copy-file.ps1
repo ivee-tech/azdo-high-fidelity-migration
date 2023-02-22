@@ -1,10 +1,15 @@
-$acctName = 'devops9867'
+$acctName = 'devopsmigrationrgacct'
 $key = '<key>'
-$fileName = '<file>'
-$filePath = 'C:\TFS\' + $fileName
+$fileName = '*.bak' # '<file>'
+$filePath = 'C:\Data\Backup\' + $fileName
 $containerName = 'data'
+$sasToken = '***' # use create-storage-account-sas.ps1 script to generate a SAS token
 
-$ctx = New-AzStorageContext -StorageAccountName $acctName -StorageAccountKey $key
+# $ctx = New-AzStorageContext -StorageAccountName $acctName -StorageAccountKey $key
+# Measure-Command {
+#     Set-AzStorageBlobContent -File $filePath -Container $containerName -Blob $fileName -Context $ctx -Force
+# }
+
 Measure-Command {
-    Set-AzStorageBlobContent -File $filePath -Container $containerName -Blob $fileName -Context $ctx -Force
+    azcopy cp $filePath https://$($acctName).blob.core.windows.net/$($containerName)?$($sasToken)
 }
