@@ -93,7 +93,7 @@ az network nic create -g $rgName --vnet-name $vnetName --subnet $subnetName -n $
     --network-security-group $nsgName --public-ip-address $pipName
 
 # Define a credential object
-$cred = Get-Credential -Message "Type the name and password of the local administrator account."
+# $cred = Get-Credential -Message "Type the name and password of the local administrator account."
 
 # Create a virtual machine configuration
 # $vmConfig = New-AzVMConfig -VMName $vmName -VMSize $vmSize | `

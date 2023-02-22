@@ -1,9 +1,12 @@
 $acctName = 'devopsmigrationrgacct'
 $key = '<key>'
-$fileName = '*.bak' # '<file>'
+# $fileName = 'init-disk.ps1' # '<file>'
+$fileName = '*.bacpac'
 $filePath = 'C:\Data\Backup\' + $fileName
+# $filePath = 'C:\s\azdo-high-fidelity-migration\scripts\' + $fileName
 $containerName = 'data'
-$sasToken = '***' # use create-storage-account-sas.ps1 script to generate a SAS token
+ # use create-storage-account-sas.ps1 script to generate a SAS token
+$sasToken = '***'
 
 # $ctx = New-AzStorageContext -StorageAccountName $acctName -StorageAccountKey $key
 # Measure-Command {
